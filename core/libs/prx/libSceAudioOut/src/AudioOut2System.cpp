@@ -34,4 +34,104 @@ int APS5_VABI sceAudioOut2UserGetSupportedAttributes(void) {
     return 0;
 }
 
+int APS5_VABI sceAudioOut2EnableChat(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2DisableChat(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoInit(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoTerminate(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextQueryMemory(void* paramsValue, size_t* memorySize) {
+    (void)paramsValue;
+    (void)memorySize;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextCreate(void* paramsValue, void* buffer, size_t bufferSize, uint64_t* context) {
+    (void)paramsValue;
+    (void)buffer;
+    (void)bufferSize;
+    (void)context;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextDestroy(uint64_t context) {
+    (void)context;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextSetAttributes(uint64_t context, void* attributes, uint32_t numAttributes) {
+    (void)context;
+    (void)attributes;
+    (void)numAttributes;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextAdvance(uint64_t context) {
+    (void)context;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextPush(uint64_t context, uint32_t blocking) {
+    (void)context;
+    (void)blocking;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoContextGetQueueLevel(uint64_t context, uint32_t* queueLevel, uint32_t* availableQueues) {
+    (void)context;
+    (void)queueLevel;
+    (void)availableQueues;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoPortCreate(uint64_t context, void* paramsValue, uint64_t* port) {
+    (void)context;
+    (void)paramsValue;
+    (void)port;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoPortDestroy(uint64_t port) {
+    (void)port;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoPortSetAttributes(uint64_t port, void* attributes, uint32_t numAttributes) {
+    (void)port;
+    (void)attributes;
+    (void)numAttributes;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioOut2LoPortGetState(uint64_t port, void* state) {
+    (void)port;
+    (void)state;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

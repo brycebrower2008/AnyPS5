@@ -307,4 +307,18 @@ std::int32_t APS5_VABI sceAudioPropagationSourceRender(AudioPropagationHandle sy
     return 0;
 }
 
+int APS5_VABI sceAudioPropagationResetAttributes(void* pAttributes, uint32_t uNumAttributes) {
+    (void)pAttributes;
+    (void)uNumAttributes;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioPropagationPathGetNumPoints(uint64_t hPathHandle, uint32_t* puNumPathPointsOut) {
+    (void)hPathHandle;
+    (void)puNumPathPointsOut;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

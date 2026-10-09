@@ -1418,4 +1418,22 @@ int APS5_VABI sceAjmBatchErrorDump(const AjmBatchInfo* info, AjmBatchError* erro
     return 0;
 }
 
+int APS5_VABI sceAjmInstanceExtend(uint32_t uiContext, uint32_t uiCodec, uint64_t uiFlags, uint32_t uiInstance) {
+    (void)uiContext;
+    (void)uiCodec;
+    (void)uiFlags;
+    (void)uiInstance;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAjmInstanceSwitch(uint32_t uiContext, uint32_t uiCodec, uint64_t uiFlags, uint32_t uiInstance) {
+    (void)uiContext;
+    (void)uiCodec;
+    (void)uiFlags;
+    (void)uiInstance;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

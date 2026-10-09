@@ -207,4 +207,142 @@ int APS5_VABI sceAudio3dObjectUnreserve(uint32_t port_id, uint32_t object_id) {
     return 0;
 }
 
+struct Audio3dPosition {
+    float x;
+    float y;
+    float z;
+};
+
+int APS5_VABI sceAudio3dPortGetAttributesSupported(uint32_t uiPortId, void* pCapabilities, void* pNumCapabilities) {
+    (void)uiPortId;
+    (void)pCapabilities;
+    (void)pNumCapabilities;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dBedWrite(uint32_t uiPortId, uint32_t uiNumChannels, uint32_t eFormat, void* pBuffer, uint32_t uiNumSamples) {
+    (void)uiPortId;
+    (void)uiNumChannels;
+    (void)eFormat;
+    (void)pBuffer;
+    (void)uiNumSamples;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dBedWrite2(uint32_t uiPortId, uint32_t uiNumChannels, uint32_t eFormat, void* pBuffer, uint32_t uiNumSamples, uint32_t eOutputRoute, uint8_t bRestricted) {
+    (void)uiPortId;
+    (void)uiNumChannels;
+    (void)eFormat;
+    (void)pBuffer;
+    (void)uiNumSamples;
+    (void)eOutputRoute;
+    (void)bRestricted;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+size_t APS5_VABI sceAudio3dGetSpeakerArrayMemorySize(uint32_t uiNumSpeakers, uint8_t bIs3d) {
+    (void)uiNumSpeakers;
+    (void)bIs3d;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dCreateSpeakerArray(void** pHandle, void* pParameters) {
+    (void)pHandle;
+    (void)pParameters;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dDeleteSpeakerArray(void* handle) {
+    (void)handle;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dGetSpeakerArrayMixCoefficients(void* handle, Audio3dPosition pos, float fSpread, void* pCoefficients, uint32_t uiNumCoefficients) {
+    (void)handle;
+    (void)pos;
+    (void)fSpread;
+    (void)pCoefficients;
+    (void)uiNumCoefficients;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dGetSpeakerArrayMixCoefficients2(void* handle, Audio3dPosition pos, float fSpread, void* pCoefficients, uint32_t uiNumCoefficients, uint8_t bHeightAware, float fDownmixSpreadRadius) {
+    (void)handle;
+    (void)pos;
+    (void)fSpread;
+    (void)pCoefficients;
+    (void)uiNumCoefficients;
+    (void)bHeightAware;
+    (void)fDownmixSpreadRadius;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dAudioOutOpen(uint32_t uiPortId, int userId, int type, int index, uint32_t len, uint32_t freq, uint32_t param) {
+    (void)uiPortId;
+    (void)userId;
+    (void)type;
+    (void)index;
+    (void)len;
+    (void)freq;
+    (void)param;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dAudioOutClose(int handle) {
+    (void)handle;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dAudioOutOutput(int handle, void* ptr) {
+    (void)handle;
+    (void)ptr;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dAudioOutOutputs(void* param, uint32_t num) {
+    (void)param;
+    (void)num;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dPortGetStatus(uint32_t uiPortId, void* pStatus) {
+    (void)uiPortId;
+    (void)pStatus;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+uint8_t* APS5_VABI sceAudio3dStrError(int iErrorCode) {
+    (void)iErrorCode;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+int APS5_VABI sceAudio3dPortCreate(uint32_t uiGranularity, uint32_t eRate, int64_t iReserved, void* pId) {
+    (void)uiGranularity;
+    (void)eRate;
+    (void)iReserved;
+    (void)pId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudio3dPortDestroy(uint32_t uiPortId) {
+    (void)uiPortId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

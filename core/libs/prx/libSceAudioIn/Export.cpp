@@ -191,4 +191,17 @@ int32_t APS5_VABI sceAudioInUnknown_X4jdIS75P0(void) {
  return 0;
 }
 
+int APS5_VABI sceAudioInGetGain(int handle, float* gain) {
+    (void)handle;
+    (void)gain;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAudioInGetRerouteCount(int handle) {
+    (void)handle;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }
