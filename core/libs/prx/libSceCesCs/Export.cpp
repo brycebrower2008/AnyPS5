@@ -110,4 +110,94 @@ int APS5_VABI sceCesUtf8ToSbc(const uint8_t* utf8, uint32_t utf8max, uint32_t* u
     return 0;
 }
 
+int APS5_VABI sceCesEucJpToUtf8(void* profile, uint8_t* eucBuffer, uint32_t eucMax, uint32_t* eucLength, uint8_t* utf8Buffer, uint32_t utf8Max, uint32_t* utf8Length) {
+    (void)profile;
+    (void)eucBuffer;
+    (void)eucMax;
+    (void)eucLength;
+    (void)utf8Buffer;
+    (void)utf8Max;
+    (void)utf8Length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceCesEucKrToUtf8(void* profile, uint8_t* eucBuffer, uint32_t eucMax, uint32_t* eucLength, uint8_t* utf8Buffer, uint32_t utf8Max, uint32_t* utf8Length) {
+    (void)profile;
+    (void)eucBuffer;
+    (void)eucMax;
+    (void)eucLength;
+    (void)utf8Buffer;
+    (void)utf8Max;
+    (void)utf8Length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceCesBig5ToUtf8(void* profile, uint8_t* big5Buffer, uint32_t big5Max, uint32_t* big5Length, uint8_t* utf8Buffer, uint32_t utf8Max, uint32_t* utf8Length) {
+    (void)profile;
+    (void)big5Buffer;
+    (void)big5Max;
+    (void)big5Length;
+    (void)utf8Buffer;
+    (void)utf8Max;
+    (void)utf8Length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceCesUhcToUtf8(void* profile, uint8_t* uhcBuffer, uint32_t uhcMax, uint32_t* uhcLength, uint8_t* utf8Buffer, uint32_t utf8Max, uint32_t* utf8Length) {
+    (void)profile;
+    (void)uhcBuffer;
+    (void)uhcMax;
+    (void)uhcLength;
+    (void)utf8Buffer;
+    (void)utf8Max;
+    (void)utf8Length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+void* APS5_VABI sceCesUcsProfileInitEucJpX0208(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+void* APS5_VABI sceCesUcsProfileInitEucJpX0208Ss2(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+void* APS5_VABI sceCesUcsProfileInitEucJpX0208Ss2Ss3(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+void* APS5_VABI sceCesUcsProfileInitEucJpCp51932(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+void* APS5_VABI sceCesUcsProfileInitEucKr(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+void* APS5_VABI sceCesUcsProfileInitBig5Cp950(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+void* APS5_VABI sceCesUcsProfileInitUhc(void* sheet) {
+    (void)sheet;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
 }
