@@ -9,6 +9,91 @@
 
 extern "C" {
 
+int APS5_VABI sceSystemServiceSetGpuLoadEmulationMode(int mode) {
+    (void)mode;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceGetGpuLoadEmulationMode(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceNavigateToGoHome(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceGetAppId(uint8_t* titleId) {
+    (void)titleId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceGetAppTitleId(int appId, uint8_t* titleId) {
+    (void)appId;
+    (void)titleId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+void APS5_VABI sceLncUtilGetAppTitleId(uint32_t appId, uint8_t* titleId) {
+    (void)appId;
+    (void)titleId;
+    NotImplemented_nid_no_patch(__func__);
+}
+
+int APS5_VABI sceLncUtilKillApp(uint32_t appId) {
+    (void)appId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceLncUtilKillAppWithReason(uint32_t appId, int reason) {
+    (void)appId;
+    (void)reason;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceLncUtilLaunchApp(uint8_t* titleId, uint8_t** argv, void* param) {
+    (void)titleId;
+    (void)argv;
+    (void)param;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceGetAppStatus(void* status) {
+    (void)status;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceAddLocalProcess(uint32_t appId, uint8_t* path, uint8_t** argv, void* opt) {
+    (void)appId;
+    (void)path;
+    (void)argv;
+    (void)opt;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceGetAppStatusListContainsDaemon(void* list, int filter, uint32_t* count) {
+    (void)list;
+    (void)filter;
+    (void)count;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSystemServiceGetAppFocusedAppStatus(void* status) {
+    (void)status;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 int APS5_VABI sceSystemServiceLoadExec(const char* path, const char* const* arguments) {
     if (!path || !*path) return SYSTEM_SERVICE_ERROR_PARAMETER;
     if (std::strcmp(path, "exit") != 0) {

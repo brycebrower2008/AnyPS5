@@ -215,4 +215,22 @@ int APS5_VABI sceNpGetUserIdByAccountId() {
     return 0;
 }
 
+int APS5_VABI sceNpSetTimeout(int reqId, int resolveRetry, uint32_t resolveTimeout, uint32_t connTimeout, uint32_t sendTimeout, uint32_t recvTimeout) {
+    (void)reqId;
+    (void)resolveRetry;
+    (void)resolveTimeout;
+    (void)connTimeout;
+    (void)sendTimeout;
+    (void)recvTimeout;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNpWaitAsync(int reqId, int* result) {
+    (void)reqId;
+    (void)result;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

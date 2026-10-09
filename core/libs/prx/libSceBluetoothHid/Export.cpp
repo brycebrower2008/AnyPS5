@@ -49,4 +49,70 @@ int APS5_VABI sceBluetoothHidSetOutputReport() {
     return 0;
 }
 
+int APS5_VABI sceBluetoothHidParamInitialize(void* param, uint64_t value) {
+    (void)param;
+    (void)value;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidThreadParamInitialize(uint32_t* param, uint32_t value1, uint64_t value2) {
+    (void)param;
+    (void)value1;
+    (void)value2;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidGetReportDescriptor(uint64_t handle, void* buffer, uint64_t length) {
+    (void)handle;
+    (void)buffer;
+    (void)length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidGetDeviceInfo(uint32_t deviceId, void* info) {
+    (void)deviceId;
+    (void)info;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidGetFeatureReport(void* report, uint32_t reportId) {
+    (void)report;
+    (void)reportId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidSetFeatureReport(uint64_t handle, uint32_t reportId, void* data, uint64_t length) {
+    (void)handle;
+    (void)reportId;
+    (void)data;
+    (void)length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidInterruptOutput(uint64_t handle, uint32_t reportId, void* data, uint64_t length) {
+    (void)handle;
+    (void)reportId;
+    (void)data;
+    (void)length;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidDisconnectDevice(uint32_t deviceId) {
+    (void)deviceId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceBluetoothHidDebugGetVersion(void) {
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

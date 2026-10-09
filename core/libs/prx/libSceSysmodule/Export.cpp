@@ -92,6 +92,17 @@ bool fillModuleInfoForUnwind(std::uint64_t addr, ModuleInfoForUnwind* info) {
 
 extern "C" {
 
+int APS5_VABI sceSysmoduleLoadModuleByNameInternal(uint8_t* fname, uint64_t a1, uint64_t a2, uint64_t a3, uint64_t a4, uint64_t a5) {
+    (void)fname;
+    (void)a1;
+    (void)a2;
+    (void)a3;
+    (void)a4;
+    (void)a5;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 int APS5_VABI sceSysmoduleGetModuleInfoForUnwind(std::uint64_t addr, int flags, ModuleInfoForUnwind* info) {
     (void)flags;
     if (!fillModuleInfoForUnwind(addr, info)) {
