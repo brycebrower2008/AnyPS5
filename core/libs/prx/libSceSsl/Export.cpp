@@ -122,4 +122,94 @@ int APS5_VABI sceSslGetSubjectName(void) {
     return 0;
 }
 
+int APS5_VABI sceSslSend(int sslConnectionId, void* msg, size_t fulllen) {
+    (void)sslConnectionId;
+    (void)msg;
+    (void)fulllen;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslRecv(int sslConnectionId, void* buf, size_t fulllen) {
+    (void)sslConnectionId;
+    (void)buf;
+    (void)fulllen;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslEnableVerifyOption(int sslConnectionId, uint32_t option) {
+    (void)sslConnectionId;
+    (void)option;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslDisableVerifyOption(int sslConnectionId, uint32_t option) {
+    (void)sslConnectionId;
+    (void)option;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslSetMinSslVersion(int sslConnectionId, int version) {
+    (void)sslConnectionId;
+    (void)version;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslSetVerifyCallback(int sslConnectionId, void* cbfunc, void* userArg) {
+    (void)sslConnectionId;
+    (void)cbfunc;
+    (void)userArg;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslSetAlpn(int sslConnectionId, const char* proto) {
+    (void)sslConnectionId;
+    (void)proto;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+uint8_t* APS5_VABI sceSslGetAlpnSelected(int sslConnectionId) {
+    (void)sslConnectionId;
+    NotImplemented_nid_no_patch(__func__);
+    return nullptr;
+}
+
+int APS5_VABI sceSslReuseConnection(int sslConnectionId, int sockId) {
+    (void)sslConnectionId;
+    (void)sockId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslGetNotAfter(int sslCtxId, void* sslCert, uint64_t* limit) {
+    (void)sslCtxId;
+    (void)sslCert;
+    (void)limit;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslGetNotBefore(int sslCtxId, void* sslCert, uint64_t* begin) {
+    (void)sslCtxId;
+    (void)sslCert;
+    (void)begin;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceSslGetFingerprint(int sslCtxId, void* sslCert, int hashType, uint8_t* fingerprint) {
+    (void)sslCtxId;
+    (void)sslCert;
+    (void)hashType;
+    (void)fingerprint;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

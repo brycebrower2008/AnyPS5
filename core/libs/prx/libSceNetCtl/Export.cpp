@@ -141,4 +141,24 @@ int APS5_VABI sceNetCtlUnregisterCallback(int cid) {
     return 0;
 }
 
+int APS5_VABI sceNetCtlGetInfoV6(int code, void* info) {
+    (void)code;
+    (void)info;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetCtlGetResultV6(int eventType, int* errorCode) {
+    (void)eventType;
+    (void)errorCode;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetCtlGetIfStat(void* ifStat) {
+    (void)ifStat;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

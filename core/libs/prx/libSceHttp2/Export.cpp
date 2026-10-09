@@ -46,6 +46,119 @@ static void CompleteAsync(const char* function, int req_id, const Http2AsyncOpti
 
 extern "C" {
 
+int APS5_VABI sceHttp2AddCookie(int cookieBoxId, const char* url, const char* cookie, size_t cookieLength) {
+    (void)cookieBoxId;
+    (void)url;
+    (void)cookie;
+    (void)cookieLength;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2AuthCacheFlush(int libhttpCtxId) {
+    (void)libhttpCtxId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2CookieExport(int cookieBoxId, void* buffer, size_t bufferSize, size_t* exportSize) {
+    (void)cookieBoxId;
+    (void)buffer;
+    (void)bufferSize;
+    (void)exportSize;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2CookieImport(int cookieBoxId, void* buffer, size_t bufferSize) {
+    (void)cookieBoxId;
+    (void)buffer;
+    (void)bufferSize;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2DeleteCookieBox(int cookieBoxId) {
+    (void)cookieBoxId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2GetCookie(int cookieBoxId, const char* url, uint8_t* cookie, size_t* required, size_t prepared) {
+    (void)cookieBoxId;
+    (void)url;
+    (void)cookie;
+    (void)required;
+    (void)prepared;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2GetCookieStats(int cookieBoxId, void* stats) {
+    (void)cookieBoxId;
+    (void)stats;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2RedirectCacheFlush(int libhttpCtxId) {
+    (void)libhttpCtxId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2RemoveRequestHeader(int id, const char* name) {
+    (void)id;
+    (void)name;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2SetAuthInfoCallback(int templateOrReqid, void* cbfunc, void* userArg) {
+    (void)templateOrReqid;
+    (void)cbfunc;
+    (void)userArg;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2SetCookieMaxNum(int cookieBoxId, uint32_t num) {
+    (void)cookieBoxId;
+    (void)num;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2SetCookieMaxNumPerDomain(int cookieBoxId, uint32_t num) {
+    (void)cookieBoxId;
+    (void)num;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2SetCookieMaxSize(int cookieBoxId, uint32_t size) {
+    (void)cookieBoxId;
+    (void)size;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2SetCookieRecvCallback(int templateOrReqid, void* cbfunc, void* userArg) {
+    (void)templateOrReqid;
+    (void)cbfunc;
+    (void)userArg;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceHttp2SetCookieSendCallback(int templateOrReqid, void* cbfunc, void* userArg) {
+    (void)templateOrReqid;
+    (void)cbfunc;
+    (void)userArg;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 int APS5_VABI sceHttp2AddRequestHeader(int id, const char* name, const char* value, uint32_t mode) {
     (void)id;
     (void)name;

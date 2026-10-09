@@ -316,6 +316,60 @@ std::int64_t message_length(const NetMsghdr* message) {
 
 extern "C" {
 
+int APS5_VABI sceNetGetSockInfo6(int s, void* info, int n, int flags) {
+    (void)s;
+    (void)info;
+    (void)n;
+    (void)flags;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetClearDnsCache(int flags) {
+    (void)flags;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetGetInterfaceStats(void* stats, int flags) {
+    (void)stats;
+    (void)flags;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetResolverStartNtoa6(int rid, const char* hostname, void* addr, int timeout, int retry, int flags) {
+    (void)rid;
+    (void)hostname;
+    (void)addr;
+    (void)timeout;
+    (void)retry;
+    (void)flags;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetResolverStartAton6(int rid, void* addr, uint8_t* hostname, int len, int timeout, int retry, int flags) {
+    (void)rid;
+    (void)addr;
+    (void)hostname;
+    (void)len;
+    (void)timeout;
+    (void)retry;
+    (void)flags;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceNetResolverConnect(void* rcinfo, const char* hostname, uint16_t port, void* rcparam) {
+    (void)rcinfo;
+    (void)hostname;
+    (void)port;
+    (void)rcparam;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 extern const std::uint32_t sce_net_in6addr_any[4] = {};
 
 int* APS5_VABI sceNetErrnoLoc(void) {
