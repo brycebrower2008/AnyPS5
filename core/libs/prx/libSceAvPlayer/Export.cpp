@@ -6,6 +6,7 @@
 #include <string_view>
 #include "SceTypes.hpp"
 #include "prx/libSceAvPlayer/include/AvPlayer.hpp"
+#include "prx/libc/include/General.hpp"
 
 using namespace AvPlayer;
 
@@ -177,6 +178,13 @@ int APS5_VABI sceAvPlayerStop(AvPlayerInternal* h) {
 int APS5_VABI sceAvPlayerStreamCount(AvPlayerInternal* h) {
     if (!h) return SCE_AVPLAYER_ERROR_INVALID_PARAMS;
     return ToPlayer(h)->StreamCount();
+}
+
+int APS5_VABI sceAvPlayerVprintf(uint8_t* format, void* args) {
+    (void)format;
+    (void)args;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
 }
 
 }

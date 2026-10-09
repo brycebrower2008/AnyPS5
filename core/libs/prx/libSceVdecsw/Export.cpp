@@ -70,4 +70,40 @@ int APS5_VABI sceVdecswResetDecoder() {
     return 0;
 }
 
+int APS5_VABI sceVdecswSyncDecodeInput(void* decoderInstance, void* inputResultOut) {
+    (void)decoderInstance;
+    (void)inputResultOut;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceVdecswSyncDecodeOutput(void* decoderInstance, void* outputInfoOut) {
+    (void)decoderInstance;
+    (void)outputInfoOut;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceVdecswGetPictureInfo(void* outputInfoIn, void* firstPictureInfoOut, void* secondPictureInfoOut) {
+    (void)outputInfoIn;
+    (void)firstPictureInfoOut;
+    (void)secondPictureInfoOut;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceVdecswGetHevcPictureInfo(void* outputInfoIn, void* pictureInfoOut) {
+    (void)outputInfoIn;
+    (void)pictureInfoOut;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceVdecswGetVp9PictureInfo(void* outputInfoIn, void* pictureInfoOut) {
+    (void)outputInfoIn;
+    (void)pictureInfoOut;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

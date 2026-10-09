@@ -76,4 +76,9 @@ int APS5_VABI videoRecordingUnknown_iQS6DUtLybE(void) {
  return 0;
 }
 
+void APS5_VABI _sceVideoRecordingQueryParam(void* param) {
+    (void)param;
+    NotImplemented_nid_no_patch(__func__);
+}
+
 }
