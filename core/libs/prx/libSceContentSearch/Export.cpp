@@ -50,4 +50,35 @@ int APS5_VABI sceContentSearchTerm(void) {
     return 0;
 }
 
+int APS5_VABI sceContentSearchGetContentLastUpdateId(int64_t* lastUpdateId) {
+    (void)lastUpdateId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceContentSearchGetNumOfContent(void* columnSet, uint32_t columnSetLength, int64_t* numOfContent, int64_t* lastUpdateId) {
+    (void)columnSet;
+    (void)columnSetLength;
+    (void)numOfContent;
+    (void)lastUpdateId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceContentSearchGetTotalContentSize(void* columnSet, uint32_t columnSetLength, int64_t* size, int64_t* lastUpdateId) {
+    (void)columnSet;
+    (void)columnSetLength;
+    (void)size;
+    (void)lastUpdateId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceContentSearchOpenMetadataByContentId(int64_t contentId, int* metadataId) {
+    (void)contentId;
+    (void)metadataId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }

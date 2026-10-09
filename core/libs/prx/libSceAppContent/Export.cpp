@@ -167,4 +167,26 @@ int APS5_VABI sceAppContentAddcontEnqueueDownload(void) {
     NotImplemented_nid_no_patch(__func__);
     return 0;
 }
+
+int APS5_VABI sceAppContentAppParamGetString(int paramId, uint8_t* buf, size_t bufSize) {
+    (void)paramId;
+    (void)buf;
+    (void)bufSize;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAppContentDownloadDataFormat(void* mountPoint) {
+    (void)mountPoint;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceAppContentGetAddcontDownloadProgress(uint32_t serviceLabel, void* entitlementLabel, void* progress) {
+    (void)serviceLabel;
+    (void)entitlementLabel;
+    (void)progress;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
 }

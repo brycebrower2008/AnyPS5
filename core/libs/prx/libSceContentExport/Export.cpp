@@ -52,4 +52,28 @@ int APS5_VABI sceContentExportTerm(void) {
     return 0;
 }
 
+int APS5_VABI sceContentExportFromDataWithThumbnail(int expId, void* param, void* contentCallbackParam, uint8_t* thumbnailType, void* thumbnailCallbackParam, uint8_t* path, size_t pathBufferLength) {
+    (void)expId;
+    (void)param;
+    (void)contentCallbackParam;
+    (void)thumbnailType;
+    (void)thumbnailCallbackParam;
+    (void)path;
+    (void)pathBufferLength;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceContentExportCancel(int expId) {
+    (void)expId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
+int APS5_VABI sceContentExportGetProgress(int expId) {
+    (void)expId;
+    NotImplemented_nid_no_patch(__func__);
+    return 0;
+}
+
 }
